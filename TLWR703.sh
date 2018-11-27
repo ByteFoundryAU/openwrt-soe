@@ -1,0 +1,1 @@
+make -j4 image PROFILE=TLWR703 PACKAGES="blkid block-mount kmod-fs-ext4 kmod-usb2 kmod-usb-uhci kmod-usb-ohci kmod-usb-storage kmod-lib-crc32c kmod-crypto-crc32c curl tcpdump-mini -dnsmasq -ppp -kmod-ppp -ppp-mod-pppoe -kmod-pppoe -kmod-pppox"
