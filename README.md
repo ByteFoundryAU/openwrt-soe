@@ -20,6 +20,8 @@ UniFi AC Lite has an annoying upgrade bug - https://bugs.openwrt.org/index.php?d
 
 Copy from the files/ directory in to the untar'ed openwrt directory. Pick the appropriate ones for the platform and the needs of the default config.
 
+Remember to put some keys in to /etc/dropbear/authorized_keys!
+
 Wishlist
 --------
 Rather than swapping in new files entirely, it would be great to work out how to just make slight changes to the defaults (via sed or perl oneliners).
