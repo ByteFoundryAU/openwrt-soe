@@ -1,10 +1,15 @@
 #!/bin/bash
 
 make clean
-mkdir -p files/etc/config
+mkdir -p files/etc/{dropbear,config}
 
 make image \
-    FILES=files/ \
     PROFILE=ubnt-unifiac-lite \
-    PACKAGES="-dnsmasq -ppp -ppp-mod-pppoe -kmod-ppp* ethtool lldpd wireless-tools -kmod-usb-core -kmod-usb-ohci -kmod-usb2 haveged snmpd"
-
+    FILES=files/ \
+    PACKAGES="-dnsmasq -ppp -ppp-mod-pppoe -kmod-ppp*  \
+        -kmod-usb-core -kmod-usb-ohci -kmod-usb2 \
+        ethtool lldpd wireless-tools \
+        haveged snmpd hostapd-utils \
+        "
+#       tar"  # add tar if backing up with backuppc
+#       luci-ssl"   # add luci-ssl if a ui is needed
