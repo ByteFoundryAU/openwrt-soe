@@ -13,6 +13,11 @@ For the ubiquiti images, these are stripped down configs suitable as Access Poin
 
 Some devices need special tricks to install openwrt over the top of factory. This is not noted here (although the unifi-ac-lite needs downgrading first, and that image is saved here for convenience).
 
+Notes
+-----
+
+UniFi AC Lite has an annoying upgrade bug - https://bugs.openwrt.org/index.php?do=details&task_id=662
+
 Wishlist
 --------
 Rather than swapping in new files entirely, it would be great to work out how to just make slight changes to the defaults (via sed or perl oneliners).
